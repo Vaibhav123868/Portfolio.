@@ -1,0 +1,871 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #0a1b35;
+  padding: 15px 30px;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.nav-links:hover {
+  padding: 10px;
+  /* Add some padding for better visibility */
+  /* border-radius: 5px;  Rounded corners */
+  transition: background-color 0.3s ease;
+  /* Smooth transition */
+}
+
+.nav-links:hover a {
+  color: #0d47a1;
+  /* Change link color on hover */
+}
+
+.logo {
+  font-size: 2.8rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-family: 'Poppins', sans-serif;
+  /* Example font family */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  font-size: 1.2rem;
+  /* Increase the font size of the links */
+  font-weight: bold;
+  /* Make the text bold */
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ffd54f;
+}
+
+.section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+  animation: fadeIn 1s ease forwards;
+}
+
+/* Intro Section */
+#intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 20px;
+  /* Light background */
+}
+
+.intro-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  gap: 50px;
+}
+
+.intro-text {
+  flex: 1;
+  text-align: left;
+}
+
+.intro-text h1 {
+  font-size: 3rem;
+  color: #082551;
+  margin-bottom: 20px;
+}
+
+.intro-text h1 span {
+  color: #0a66c2;
+  /* Highlighted color */
+}
+
+.intro-text p {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.intro-links {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.intro-links .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #0a66c2;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.intro-links .btn:hover {
+  background-color: #084a8c;
+}
+
+.download-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #ff5722;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #e64a19;
+}
+
+.intro-photo {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  /* Align photo to the right */
+  align-items: center;
+  margin-left: 50px;
+  /* Add some space to move the photo to the right */
+}
+
+.intro-photo img {
+  width: 300px;
+  /* Increase the width of the image */
+  height: 300px;
+  /* Increase the height of the image */
+  border-radius: 50%;
+  /* Keeps the image circular */
+  object-fit: cover;
+  /* Ensures the image fits within the circle */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  /* Enhance the shadow for better visibility */
+  border: 5px solid #0a66c2;
+  /* Optional: Add a border around the image */
+}
+
+#about {
+  font-size: 1.4rem;
+  /* Increase the overall font size */
+  line-height: 2;
+  /* Adjust line height for better readability */
+  padding: 100px 30px;
+  /* Add more padding to make the section larger */
+  max-width: 1200px;
+  /* Increase the width of the section */
+  margin: auto;
+  /* Center the section */
+}
+
+#about h2 {
+  font-size: 3rem;
+  /* Increase the size of the heading */
+  margin-bottom: 30px;
+  /* Add more spacing below the heading */
+  color: #082551;
+  text-align: center;
+  /* Center the heading */
+}
+
+#about p {
+  font-size: 1.1rem;
+  /* Increase the size of the paragraph text */
+  line-height: 2.2;
+  /* Further improve readability */
+  font-weight: 400;
+  color: rgb(36, 23, 23);
+  text-align: justify;
+  /* Justify the paragraph text */
+}
+
+#about {
+  background-image: url('https://plus.unsplash.com/premium_photo-1701646600064-3365efea1ba8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YWJvdXQlMjBtZSUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D');
+  background-size: cover;
+  background-position: center;
+  padding: 150px 30px;
+  /* Increase height with padding */
+  margin-top: 20px;
+  width: 100%;
+  /* Ensure the section spans the full width of the viewport */
+}
+
+
+/* Add extra space between sections */
+.section {
+  margin-bottom: 100px;
+  /* Add space below each section */
+}
+
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #0d47a1;
+  letter-spacing: 1.5px;
+}
+
+/*SkILLS KA LIYA*/
+
+#skills {
+  background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dGVjaHxlbnwwfHwwfHx8MA%3D%3D');
+  /* Replace with your image URL or local path */
+  background-size: cover;
+  /* Ensures the image covers the entire section */
+  background-position: center;
+  /* Centers the image */
+  background-repeat: no-repeat;
+  /* Prevents the image from repeating */
+  padding: 100px 20px;
+  /* Adjust padding for better spacing */
+  color: white;
+  /* Ensure text is readable on the background */
+  margin-top: 20px;
+  /* Add gap above the Skills section */
+  width: 150%;
+  /* Ensure the section spans the full width of the viewport */
+}
+
+
+
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+}
+
+.skills-list li {
+  background-color: #051835;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(13, 71, 161, 0.4);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  max-width: 300px;
+  text-align: center;
+}
+
+.skills-list li p {
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin-top: 10px;
+  color: #d1f3d1;
+}
+
+.skills-list li:hover {
+  transform: scale(1.1);
+  background-color: #063970;
+}
+
+.skills-list li strong {
+  font-size: 1.5rem;
+  /* Increase the font size of the strong text */
+  color: #287cdc;
+  /* Optional: Ensure the text color is visible */
+}
+
+/*.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  list-style: none;
+}*/
+
+/* Increase the size of the Skills heading */
+#skills h2 {
+  font-size: 3rem;
+  /* Increase the font size of the heading */
+  margin-bottom: 30px;
+  /* Add more spacing below the heading */
+  color: #041939;
+  /* Optional: Change the color */
+}
+
+/* Add hover effect to the skills list items */
+/*.skills-list li {
+  background-color: #0d47a1;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(13, 71, 161, 0.4);
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth hover transition 
+}*/
+
+
+
+/*.skills-list li {
+  background-color: #0d47a1;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(13, 71, 161, 0.4);
+}*/
+
+/*Best Work*/
+/* Style for the Best Work section */
+
+.section h2 {
+  font-size: 3rem;
+  /* Increase the size of the heading */
+  margin-bottom: 30px;
+  /* Add more spacing below the heading */
+  color: #082551;
+  text-align: center;
+  /* Center the heading */
+
+}
+
+
+
+
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.project-card {
+  font-size: 1.5rem;
+  background-color: #062553;
+  color: rgb(155, 149, 137);
+  padding: 20px 15px;
+  border-radius: 10px;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(13, 71, 161, 0.4);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  max-width: 400px;
+  text-align: center;
+  line-height: 1.9;
+}
+
+.project-card p {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 10px;
+  color: #cfc5c5;
+}
+
+.project-card a {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #ffd54f;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.project-card a:hover {
+  color: #ffab00;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  background-color: #063970;
+}
+
+/* Increase the length of the Best Work section */
+#best {
+  padding: 120px 20px;
+  /* Add more padding to increase the section's height */
+}
+
+/* Add more spacing between project cards */
+.projects-list {
+  gap: 30px;
+  /* Increase the gap between project cards */
+}
+
+/* Optionally, increase the padding inside each project card */
+.project-card {
+  padding: 30px 20px;
+  /* Add more padding inside the cards */
+}
+
+
+/* Add extra space between sections */
+.section {
+  margin-bottom: 100px;
+  /* Add space below each section */
+}
+
+
+form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 10px;
+  border: 2px solid #0d47a1;
+  border-radius: 5px;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+button {
+  background-color: #0d47a1;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #063970;
+}
+
+.contact-info {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+.contact-info a {
+  color: #0d47a1;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #e0e0e0;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .projects {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /*Responsive*/
+  /* General Reset and Base Styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  body {
+    background: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+  }
+
+  /* Responsive Header */
+  header {
+    background-color: #0a1b35;
+    padding: 15px 30px;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+
+  .nav-links a {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  .nav-links a:hover {
+    color: #ffd54f;
+  }
+
+  /* Responsive Intro Section */
+  #intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 20px;
+    background-color: #f9f9f9;
+  }
+
+  .intro-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    gap: 50px;
+  }
+
+  .intro-text {
+    flex: 1;
+    text-align: left;
+  }
+
+  .intro-text h1 {
+    font-size: 3rem;
+    color: #082551;
+    margin-bottom: 20px;
+  }
+
+  .intro-text h1 span {
+    color: #0a66c2;
+  }
+
+  .intro-text p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  .intro-links {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+
+  .intro-links .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #0a66c2;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+
+  .intro-links .btn:hover {
+    background-color: #084a8c;
+  }
+
+  .download-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #ff5722;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+
+  .download-btn:hover {
+    background-color: #e64a19;
+  }
+
+  .intro-photo {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .intro-photo img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    border: 5px solid #0a66c2;
+  }
+
+  /* Responsive About Section */
+  #about {
+    font-size: 1.4rem;
+    line-height: 2;
+    padding: 100px 30px;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  #about h2 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    color: #082551;
+    text-align: center;
+  }
+
+  #about p {
+    font-size: 1.1rem;
+    line-height: 2.2;
+    font-weight: 400;
+    color: rgb(36, 23, 23);
+    text-align: justify;
+  }
+
+  /* Responsive Skills Section */
+  #skills {
+    background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dGVjaHxlbnwwfHwwfHx8MA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 20px;
+    color: white;
+    margin-top: 20px;
+  }
+
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+  }
+
+  .skills-list li {
+    background-color: #051835;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    box-shadow: 0 2px 6px rgba(13, 71, 161, 0.4);
+    max-width: 300px;
+    text-align: center;
+  }
+
+  .skills-list li p {
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-top: 10px;
+    color: #d1f3d1;
+  }
+
+  .skills-list li strong {
+    font-size: 1.5rem;
+    color: #287cdc;
+  }
+
+  /* Responsive Best Work Section */
+  #best {
+    padding: 120px 20px;
+  }
+
+  .projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+  }
+
+  .project-card {
+    font-size: 1.5rem;
+    background-color: #062553;
+    color: rgb(155, 149, 137);
+    padding: 30px 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    box-shadow: 0 2px 6px rgba(13, 71, 161, 0.4);
+    max-width: 400px;
+    text-align: center;
+    line-height: 1.9;
+  }
+
+  /* Responsive Contact Section */
+  form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    padding: 10px;
+    border: 2px solid #0d47a1;
+    border-radius: 5px;
+    font-size: 1rem;
+    resize: vertical;
+  }
+
+  button {
+    background-color: #0d47a1;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  button:hover {
+    background-color: #063970;
+  }
+
+  /* Responsive Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #e0e0e0;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #555;
+  }
+
+  /* Responsive Media Queries */
+  @media (max-width: 1024px) {
+    .intro-container {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .intro-photo {
+      margin-top: 20px;
+      justify-content: center;
+    }
+
+    .intro-photo img {
+      width: 250px;
+      height: 250px;
+    }
+
+    .skills-list li {
+      max-width: 100%;
+    }
+
+    .project-card {
+      max-width: 100%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .nav-links {
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .intro-container {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .intro-photo img {
+      width: 200px;
+      height: 200px;
+    }
+
+    .skills-list li {
+      max-width: 100%;
+    }
+
+    .project-card {
+      max-width: 100%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .intro-text h1 {
+      font-size: 2rem;
+    }
+
+    .intro-text p {
+      font-size: 1rem;
+    }
+
+    .intro-photo img {
+      width: 150px;
+      height: 150px;
+    }
+
+    .skills-list li {
+      padding: 10px;
+    }
+
+    .project-card {
+      padding: 15px;
+    }
+  }
+
+
+
+}
