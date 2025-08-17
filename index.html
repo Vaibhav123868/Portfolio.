@@ -151,6 +151,20 @@
   </footer>
 
   <script src="script.js"></script>
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const btn = document.querySelector('.download-btn');
+    if (btn) {
+      btn.addEventListener('click', function (e) {
+        // Simple open in new tab (mobile-friendly)
+        const url = btn.getAttribute('href');
+        if (url && url !== '#') window.open(url, '_blank');
+      });
+    }
+  });
+</script>
+
 </body>
+
 
 </html>
