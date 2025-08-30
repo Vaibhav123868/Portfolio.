@@ -38,7 +38,10 @@
             <i class="ri-github-fill"></i> GitHub
           </a>
         </div>
-        <a href="Vaibhav Dhiman" download class="btn download-btn">Download Resume</a>
+        <a href="Vaibhav_Dhiman.pdf" download="Vaibhav_Dhiman_Resume" class="btn download-btn">
+          Download Resume
+        </a>
+
       </div>
 
       <!-- Right Side -->
@@ -129,11 +132,15 @@
       <button type="submit">Send Message</button>
     </form>
     <p class="contact-info">
-      Or connect with me on
-      <a href="https://www.linkedin.com" target="linkedin.com/in/vaibhav-dhiman-593777270"> <i
-          class="ri-linkedin-box-fill"></i> LinkedIn</a> |
+      Connect with me on:<br />
+      <a href="https://linkedin.com/in/vaibhav-dhiman-593777270" target="_blank" class="btn">
+        <i class="ri-linkedin-box-fill"></i> LinkedIn
+      </a>
       <a href="https://github.com/vaibhavdhiman" target="https://github.com/Vaibhav123868"> <i
           class="ri-github-fill"></i> GitHub</a><br />
+      <a href="https://www.instagram.com/vaibhavdhiman108?igsh=MXJxdHVuajIydXdtZQ==" target="_blank" class="btn">
+        <i class="ri-instagram-line"></i> Instagram
+      </a><br />
       Phone: +91-9368904854<br />
       Email: vaibhavdhiman108@gmail.com | printfusion108@gmail.com
     </p>
@@ -142,19 +149,35 @@
   <footer>
     <p>&copy; 2025 Vaibhav Dhiman. All rights reserved.</p>
     <p>Follow me on:
-      <a href="https://www.linkedin.com" target="linkedin.com/in/vaibhav-dhiman-593777270"> <i
-          class="ri-linkedin-box-fill"></i></a>
+      <a href="https://linkedin.com/in/vaibhav-dhiman-593777270" target="_blank" class="btn">
+        <i class="ri-linkedin-box-fill"></i>
+      </a>
       <a href="https://twitter.com" target="linkedin.com/in/vaibhav-dhiman-593777270"> <i
-          class="ri-twitter-x-fill"></i></a> |
+          class="ri-twitter-x-fill"></i></a>
+      <a href="https://www.instagram.com/vaibhavdhiman108?igsh=MXJxdHVuajIydXdtZQ==" target="_blank" class="btn">
+
+        <i class="ri-instagram-line"></i>
+      </a>
     </p>
     <p>Thank you for visiting my Portfolio</p>
   </footer>
 
   <script src="script.js"></script>
-  
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const btn = document.querySelector('.download-btn');
+      if (btn) {
+        btn.addEventListener('click', function (e) {
+          // Simple open in new tab (mobile-friendly)
+          const url = btn.getAttribute('href');
+          if (url && url !== '#') window.open(url, '_blank');
+        });
+      }
+    });
+
+
+  </script>
 
 </body>
 
-
 </html>
-
