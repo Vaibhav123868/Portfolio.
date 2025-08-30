@@ -23,3 +23,6 @@ form.addEventListener('submit', function (e) {
   alert(`Thanks for contacting me, ${name}! I will get back to you soon.`);
   form.reset();
 });
+
+<script defer data-domain="vaibhav123868.github.io/portfolio." src="https://plausible.io/js/script.outbound-links.pageview-props.revenue.tagged-events.js"></script>
+<script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
