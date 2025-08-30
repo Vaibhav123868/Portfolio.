@@ -24,5 +24,3 @@ form.addEventListener('submit', function (e) {
   form.reset();
 });
 
-defer data-domain="vaibhav123868.github.io/portfolio." src="https://plausible.io/js/script.outbound-links.pageview-props.revenue.tagged-events.js">
-window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }
